@@ -36,7 +36,7 @@ public class Interfaz2025 extends javax.swing.JFrame {
         ckbxAlmuerzo = new javax.swing.JCheckBox();
         ckbxTransporte = new javax.swing.JCheckBox();
         ckbxMaterialA = new javax.swing.JCheckBox();
-        rbtMañana = new javax.swing.JRadioButton();
+        rbtManana = new javax.swing.JRadioButton();
         rbtTarde = new javax.swing.JRadioButton();
         btnRegistrarP = new javax.swing.JButton();
         btnMostrarR = new javax.swing.JButton();
@@ -74,6 +74,11 @@ public class Interfaz2025 extends javax.swing.JFrame {
         btgServicios.add(ckbxTransporte);
         ckbxTransporte.setFont(new java.awt.Font("Harrington", 3, 12)); // NOI18N
         ckbxTransporte.setText("TRANSPORTE");
+        ckbxTransporte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbxTransporteActionPerformed(evt);
+            }
+        });
 
         btgServicios.add(ckbxMaterialA);
         ckbxMaterialA.setFont(new java.awt.Font("Harrington", 3, 12)); // NOI18N
@@ -84,9 +89,9 @@ public class Interfaz2025 extends javax.swing.JFrame {
             }
         });
 
-        btgAsistencia.add(rbtMañana);
-        rbtMañana.setFont(new java.awt.Font("Harrington", 3, 12)); // NOI18N
-        rbtMañana.setText("MAÑANA");
+        btgAsistencia.add(rbtManana);
+        rbtManana.setFont(new java.awt.Font("Harrington", 3, 12)); // NOI18N
+        rbtManana.setText("MAÑANA");
 
         btgAsistencia.add(rbtTarde);
         rbtTarde.setFont(new java.awt.Font("Harrington", 3, 12)); // NOI18N
@@ -136,7 +141,7 @@ public class Interfaz2025 extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(127, 127, 127)
-                .addComponent(rbtMañana)
+                .addComponent(rbtManana)
                 .addGap(59, 59, 59)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rbtTarde)
@@ -163,7 +168,7 @@ public class Interfaz2025 extends javax.swing.JFrame {
                     .addComponent(ckbxMaterialA))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rbtMañana)
+                    .addComponent(rbtManana)
                     .addComponent(rbtTarde))
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -188,44 +193,26 @@ public class Interfaz2025 extends javax.swing.JFrame {
     }//GEN-LAST:event_ckbxMaterialAActionPerformed
 
     private void btnRegistrarPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarPActionPerformed
-        // TODO add your handling code here:
+        //String nombre = txtNombreP.getText();
+        //String categoria = (String) cbxCategoria.getSelectedItem();
+        //String almuerzo =  Boolean.toString(ckbxAlmuerzo.isSelected());
+        //String transporte = Boolean.toString(ckbxTransporte.isSelected());
+        //String material = Boolean.toString(ckbxMaterialA.isSelected());
+        //Boolean turnoManana= rbtManana.isSelected();
+        //Boolean turnoTarde = rbtTarde.isSelected();
+        //String turno ="";
+        //if (turnoManana){
+         //turno ="Mañana";
+         //}else
+        //if (turnoTarde){
+  //turno="Tarde";}        // TODO add your handling code here:
     }//GEN-LAST:event_btnRegistrarPActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interfaz2025.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interfaz2025.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interfaz2025.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interfaz2025.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    private void ckbxTransporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbxTransporteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ckbxTransporteActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Interfaz2025().setVisible(true);
-            }
-        });
-    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup btgAsistencia;
@@ -239,7 +226,7 @@ public class Interfaz2025 extends javax.swing.JFrame {
     private javax.swing.JLabel lblCategoriaP;
     private javax.swing.JLabel lblNombreP;
     private javax.swing.JLabel lblSRPPE;
-    private javax.swing.JRadioButton rbtMañana;
+    private javax.swing.JRadioButton rbtManana;
     private javax.swing.JRadioButton rbtTarde;
     private javax.swing.JTextField txtNombreP;
     // End of variables declaration//GEN-END:variables
